@@ -1,0 +1,81 @@
+/******* NavBar *******/
+nav ul {
+  list-style: none;
+  text-align: center;
+  background-color: transparent;
+}
+nav li, h1#nav-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid white;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s background-color;
+  color: black;
+}
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+nav a.active {
+  background-color: #fff;
+  color: purple;
+  cursor: default;
+}
+h1#nav-title {
+  background-color: transparent;
+  text-align: center;
+  margin: 0;
+  color: black;
+  transition: background-color .3s ease;
+}
+h1#nav-title.expanded {
+  background-color: transparent;
+}
+@media screen and (max-width: 600px) {
+  nav ul {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition: height .5s ease;
+  }
+  ul.expanded {
+    height: 201px;
+  }
+  .content {
+    padding: 1em;
+  }
+}
+@media screen and (min-width: 600px) {
+  h1#nav-title {
+    display: none;
+  }
+
+  nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+  nav li {
+    float: left;
+  }
+  nav ul {
+    overflow: hidden;
+    width: 600px;
+    margin: 0 auto;
+  }
+  nav {
+    background-color: transparent;
+  }
+  .content {
+    padding: 2em;
+  }
+}
