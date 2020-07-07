@@ -4,8 +4,7 @@ body {
 	font-weight: 100;
 	margin: 0;
 	padding: 0;
-	background: rgb(0,251,202);
-	background: linear-gradient(45deg, rgba(0,251,202,0.675529586834734) 0%, rgba(201,0,255,0.7819721638655462) 100%) fixed;
+	background: #f2eecb;
 }
 
 hr {
