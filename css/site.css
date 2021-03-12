@@ -7,6 +7,10 @@ a {
   color: black;
 }
 
+img {
+    width: 20%;   
+}
+
 .header {
   text-align: center;
   padding-top: 7%;
