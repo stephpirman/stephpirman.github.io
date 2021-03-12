@@ -8,12 +8,12 @@ a {
 }
 
 img {
-    width: 75%;   
+   width: 75%;   
 }
 
 .header {
   text-align: center;
-  padding-top: 7%;
+  padding-top: 5%;
   float: center;
   font-family: 'Poiret One', cursive;
   font-size: 60pt;
